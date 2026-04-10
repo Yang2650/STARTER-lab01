@@ -148,7 +148,7 @@ IntList& IntList::operator=(const IntList& source){
     while (curr) {
         Node* tmp = new Node;
         tmp->info = curr->info;
-        tmp->next = curr->next;
+        tmp->next = 0;
         if (!head) {
             head = tmp;
             tail = tmp;
